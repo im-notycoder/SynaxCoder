@@ -70,7 +70,7 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>Hᴇʏ Dᴜᴅᴇ🥰,\n\nYᴏᴜ ᴄᴀɴ'ᴛ Gᴇᴛ ᴍᴏᴠɪᴇ ʜᴇʀᴇ........\nAꜱᴋ ᴍᴏᴠɪᴇ ᴏɴ ᴏᴜʀ ɢʀᴏᴜᴘ\nCʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ 𝚓ᴏɪɴ👇</b>",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://t.me/animehunterXhub")]]))
+    await message.reply_text("<b>Hᴇʏ Dᴜᴅᴇ🥰,\n\nYᴏᴜ ᴄᴀɴ'ᴛ Gᴇᴛ ᴍᴏᴠɪᴇ ʜᴇʀᴇ........\nAꜱᴋ ᴍᴏᴠɪᴇ ᴏɴ ᴏᴜʀ ɢʀᴏᴜᴘ\nCʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ 𝚓ᴏɪɴ👇</b>",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ​ ", url=f"https://t.me/synaxchatgroup")]]))
     await bot.send_message(chat_id=ADMINS,text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -803,7 +803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("🧑‍💻 Oᴡɴᴇʀ", url="t.me/imm_shivam")
+                  InlineKeyboardButton("🧑‍💻 Oᴡɴᴇʀ", url="t.me/Coder_s4nax")
                  ]
                 ]
             )
@@ -1207,8 +1207,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "money_bot":
         buttons = [[
-            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/animehunterXhub'),
-            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Nxt_bots')
+            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/synaxchatgroup'),
+            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ', url='https://t.me/synaxnetwork')
         ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
         ]]
@@ -1409,10 +1409,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=f'https://t.me/Nxt_bots'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=f'https://t.me/synaxnetwork'),
             InlineKeyboardButton('Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='source')
         ],[
-            InlineKeyboardButton('Rᴇᴘᴏʀᴛ Bᴜɢꜱ & Fᴇᴇᴅʙᴀᴄᴋ',url=f'https://t.me/soon')
+            InlineKeyboardButton('Rᴇᴘᴏʀᴛ Bᴜɢꜱ & Fᴇᴇᴅʙᴀᴄᴋ',url=f'https://t.me/synaxchatgroup')
         ],[ 
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
@@ -1723,7 +1723,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "deploy":
         buttons = [[
            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com'),
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/imm_shivam')
+           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='t.me/Coder_s4nax')
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
         ]]
@@ -1866,7 +1866,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/owernarutobot")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/Coder_s4nax")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
